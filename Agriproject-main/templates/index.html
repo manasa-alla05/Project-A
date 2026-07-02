@@ -1,0 +1,120 @@
+{% extends 'base.html' %} {% block title %} Home {% endblock title %} {% block body %}
+
+<!--cart section-->
+<div class="hero-image1">
+    <div class="hero-text1">
+        <h2 class="breadcrumbs text-black display-2" style="font-family: 'Amatic SC', cursive; font-weight: bolder;">
+            <span class="mr-2">Agriculture Empowerment portal</span>
+        </h2>
+        <h4 class="mb-10 bread font-weight-bold">
+            "ఇక్కడ నుంచి మీ ఆగ్రి-ప్రయాణం ప్రారంభించండి!!"
+        </h4>
+        <br />
+        <p><a href="" class="btn view rounded-pill">View Details</a></p>
+    </div>
+</div>
+<!--/cart section-->
+<br />
+
+<!--about us-->
+<section>
+    <div class="container">
+        <h1 class="text-center text-capitalize pt-5" style="font-family: 'Arima Madurai', cursive;">About us</h1>
+        <hr class="w-25 mx-auto" />
+
+        <div class="row mb-5">
+            <div class="col-lg-6 col-md-6 col-12">
+                <!-- <img src="{{ url_for('static', filename='images/3.jpeg') }}" class="img-fluid w-100" /> -->
+                <figure class="snip1256">
+                    <img src="{{ url_for('static', filename='images/bg-ip.jpg') }}" alt="sample42" />
+                    <figcaption>
+                        <h3>One stop guide...</h3>
+                        <h4 class="mt-4 mb-4">Project-A</h4><a href="#" class="read-more">Read More</a>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-lg-6" style="font-family: 'Arima Madurai', cursive;">
+                <h3 class="mt-4">
+                    Improving Agriculture, Improving Lives, Cultivating Crops To Make Farmers Increase Profit.
+                </h3>
+                <p class="mt-3" style="line-height: 1.6">
+                    Welcome to Project A – where innovation meets farming. Unlock your crops' potential with advanced services like detailed soil fertility testing, personalized crop recommendations, and proactive disease predictions. Confidently plan your agricultural activities with real-time weather forecasts and immerse yourself in insightful blogs. Project A empowers farmers with cutting-edge technology for efficient and rewarding farming.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--about us end-->
+
+<!--service part-->
+<section>
+    <div class="container">
+        <h1 class="text-center text-capitalize pt-5" style="font-family: 'Arima Madurai', cursive;">Our services</h1>
+        <hr class="w-25 mx-auto" />
+
+        <div class="row text-center mb-5 p-3">
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card text-white card1" style="background-color:#15321c ; font-family: 'Arima Madurai', cursive;">
+                    <img class="card-img-top" src="{{url_for('static', filename='images/v1.jpg')}}" alt="Card image" />
+                    <div class="card-body">
+                        <h4 class="card-title">Detailed Soil Fertility Testing</h4>
+                        <p class="card-text">Explore the depths of your soil's composition through our meticulous soil fertility testing. Uncover essential nutrient insights to optimize your land for maximum yield and sustainable farming practices.
+                        </p>
+                        <p><a href="{{ url_for('crop_recommend') }}" class="btn view rounded-pill">View Details</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card  text-white card1" style="background-color:#15321c ;font-family: 'Arima Madurai', cursive;">
+                    <img class="card-img-top" src="{{ url_for('static', filename='images/c.jpg') }}" alt="Card image" />
+                    <div class="card-body">
+                        <h4 class="card-title">Personalized Crop Recommendations</h4>
+                        <p class="card-text"> Tailor your crop selection with precision. Our data-driven algorithms analyze soil fertility, climate conditions, and regional best practices to deliver personalized crop recommendations, ensuring your farm's success.
+                        </p>
+                        <p><a href="{{ url_for('fertilizer_recommendation') }}" class="btn view rounded-pill">View Details</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card  text-white card1" style="background-color:#15321c ;font-family: 'Arima Madurai', cursive;">
+                    <img class="card-img-top" src="{{ url_for('static', filename='images/b.jpg') }}" alt="Card image" />
+                    <div class="card-body">
+                        <h4 class="card-title">Proactive Disease Predictions</h4>
+                        <p class="card-text">Stay one step ahead of potential crop diseases. Our predictive modeling and historical data analysis provide early warnings and effective strategies to prevent and manage diseases, safeguarding your harvests.
+
+                        </p>
+                        <p><a href="{{ url_for('disease_prediction') }}" class="btn view rounded-pill">View Details</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--services end-->
+
+
+
+<!-- footer section start-->
+
+<footer class="page-footer font-small blue">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3  text-light p-2" style="background-color: #15321c; background-size: cover; height: 100px; background-position: center; position:center; font-family: 'Arima Madurai', cursive;">
+        <h5> Copyright©2023: Project-A
+            <div class="text-center text-white text-uppercase font-weight-bold">ఇక్కడ నుంచి మీ ఆగ్రి-ప్రయాణం ప్రారంభించండి!!</div>
+        </h5>
+    </div>
+
+    <!-- Copyright -->
+</footer>
+
+<!-- footer section end -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+{% endblock body %}
